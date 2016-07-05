@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="zigzaggy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,192 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Pillar" translatesAutoresizingMaskIntoConstraints="NO" id="eZy-v3-O5Z">
+                                <rect key="frame" x="389" y="406" width="79" height="142"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="142" id="UXH-FC-Xdy"/>
+                                    <constraint firstAttribute="width" constant="79" id="pf8-7q-ysw"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Pillar" translatesAutoresizingMaskIntoConstraints="NO" id="ncq-gs-DYQ">
+                                <rect key="frame" x="302" y="406" width="79" height="142"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="79" id="Fa5-am-knd"/>
+                                    <constraint firstAttribute="height" constant="142" id="vap-s9-q9I"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Pillar" translatesAutoresizingMaskIntoConstraints="NO" id="Ca4-Or-hvV">
+                                <rect key="frame" x="198" y="394" width="79" height="142"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="142" id="dlt-hZ-4wD"/>
+                                    <constraint firstAttribute="width" constant="79" id="lyU-3a-lIU"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Pillar" translatesAutoresizingMaskIntoConstraints="NO" id="das-nH-fVo">
+                                <rect key="frame" x="101" y="394" width="79" height="142"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="142" id="sTw-ta-YJo"/>
+                                    <constraint firstAttribute="width" constant="79" id="xAq-wu-I3F"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Pillar" translatesAutoresizingMaskIntoConstraints="NO" id="54W-aW-rIv">
+                                <rect key="frame" x="14" y="385" width="79" height="142"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="142" id="Sm0-3G-L1V"/>
+                                    <constraint firstAttribute="width" constant="79" id="xs2-cE-pxs"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Pillar" translatesAutoresizingMaskIntoConstraints="NO" id="tZ0-kW-az1">
+                                <rect key="frame" x="383" y="270" width="79" height="142"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="142" id="JMW-xQ-qiw"/>
+                                    <constraint firstAttribute="width" constant="79" id="Mb4-Tp-SD8"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Pillar" translatesAutoresizingMaskIntoConstraints="NO" id="q02-0u-qBh">
+                                <rect key="frame" x="302" y="256" width="79" height="142"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="142" id="7fY-pg-Zva"/>
+                                    <constraint firstAttribute="width" constant="79" id="moR-Lw-BOE"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Pillar" translatesAutoresizingMaskIntoConstraints="NO" id="cDP-8p-1TO">
+                                <rect key="frame" x="203" y="252" width="79" height="142"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="142" id="5Lh-vF-3sk"/>
+                                    <constraint firstAttribute="width" constant="79" id="myR-p1-Tbe"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Pillar" translatesAutoresizingMaskIntoConstraints="NO" id="CCI-QF-Ayz">
+                                <rect key="frame" x="111" y="256" width="79" height="142"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="142" id="88y-s2-rKy"/>
+                                    <constraint firstAttribute="width" constant="79" id="sNH-Mv-gNA"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Pillar" translatesAutoresizingMaskIntoConstraints="NO" id="5iD-q2-gLh">
+                                <rect key="frame" x="6" y="252" width="79" height="142"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="79" id="B0b-UA-bj3"/>
+                                    <constraint firstAttribute="height" constant="142" id="fDk-7i-RW1"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="PillarTop" translatesAutoresizingMaskIntoConstraints="NO" id="yvm-jw-7wN">
+                                <rect key="frame" x="141" y="555" width="65" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Jvh-he-V4j"/>
+                                    <constraint firstAttribute="width" constant="65" id="zlO-mH-Bcx"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="PillarTop" translatesAutoresizingMaskIntoConstraints="NO" id="PWh-T5-PTz">
+                                <rect key="frame" x="68" y="555" width="65" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="7cu-gL-7iG"/>
+                                    <constraint firstAttribute="width" constant="65" id="iIE-6k-71n"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="PillarTop" translatesAutoresizingMaskIntoConstraints="NO" id="jT8-dc-qlE">
+                                <rect key="frame" x="0.0" y="550" width="65" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="Ns6-es-dh1"/>
+                                    <constraint firstAttribute="height" constant="50" id="w1P-0R-7kh"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cBh-5s-u9Q">
+                                <rect key="frame" x="321" y="502" width="302" height="126"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="302" id="FUW-Yd-gzd"/>
+                                    <constraint firstAttribute="height" constant="126" id="TQu-Mz-pzh"/>
+                                </constraints>
+                                <state key="normal" image="RETRY"/>
+                                <connections>
+                                    <action selector="Retry:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CTg-WZ-4Vz"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="BALL" translatesAutoresizingMaskIntoConstraints="NO" id="QZP-du-3cQ">
+                                <rect key="frame" x="73" y="49" width="26" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="26" id="2m1-EI-jTV"/>
+                                    <constraint firstAttribute="height" constant="28" id="bPX-c9-SoV"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gyb-97-nBf">
+                                <rect key="frame" x="273" y="252" width="113" height="30"/>
+                                <state key="normal" title="CLICK TO PLAY"/>
+                                <connections>
+                                    <action selector="Play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WdN-J0-hkt"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="GAMEOVER" translatesAutoresizingMaskIntoConstraints="NO" id="xpJ-Xo-a61">
+                                <rect key="frame" x="180" y="15" width="240" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="Wp9-h5-Wls"/>
+                                    <constraint firstAttribute="height" constant="55" id="jKR-RR-1Vi"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="LOGO" translatesAutoresizingMaskIntoConstraints="NO" id="ndE-Xn-r4m">
+                                <rect key="frame" x="209" y="78" width="240" height="147"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="9ec-Xw-SgO"/>
+                                    <constraint firstAttribute="height" constant="147" id="wbL-MV-M9v"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="SCORE" translatesAutoresizingMaskIntoConstraints="NO" id="weG-9v-IxS">
+                                <rect key="frame" x="26" y="78" width="348" height="186"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="186" id="OYV-O3-C8C"/>
+                                    <constraint firstAttribute="width" constant="348" id="fQ7-51-Ogf"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cBh-5s-u9Q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MYE-B5-QNY"/>
+                            <constraint firstItem="ndE-Xn-r4m" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OuV-NL-iPl"/>
+                            <constraint firstItem="weG-9v-IxS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QIO-aP-nu0"/>
+                            <constraint firstItem="gyb-97-nBf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eRx-jV-2ew"/>
+                            <constraint firstItem="xpJ-Xo-a61" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xpo-Uu-7tC"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="Ball" destination="QZP-du-3cQ" id="t8e-nt-y8i"/>
+                        <outlet property="GameOver" destination="xpJ-Xo-a61" id="mUV-0u-QeZ"/>
+                        <outlet property="Logo" destination="ndE-Xn-r4m" id="w10-iS-t5d"/>
+                        <outlet property="Play" destination="gyb-97-nBf" id="TRg-kt-Ia7"/>
+                        <outlet property="Retry" destination="cBh-5s-u9Q" id="ell-L3-pAS"/>
+                        <outlet property="Scoreboard" destination="weG-9v-IxS" id="aUU-rX-j0V"/>
+                        <outlet property="p1" destination="5iD-q2-gLh" id="nWu-kE-OWH"/>
+                        <outlet property="p10" destination="eZy-v3-O5Z" id="ggm-0U-dvJ"/>
+                        <outlet property="p2" destination="CCI-QF-Ayz" id="Drj-o1-Y0G"/>
+                        <outlet property="p3" destination="cDP-8p-1TO" id="bna-P9-k6M"/>
+                        <outlet property="p4" destination="q02-0u-qBh" id="kdZ-A9-wWs"/>
+                        <outlet property="p5" destination="tZ0-kW-az1" id="SOR-wo-e23"/>
+                        <outlet property="p6" destination="54W-aW-rIv" id="0cy-9y-vVQ"/>
+                        <outlet property="p7" destination="das-nH-fVo" id="EXO-BF-oZo"/>
+                        <outlet property="p8" destination="Ca4-Or-hvV" id="Ng7-Zk-a9d"/>
+                        <outlet property="p9" destination="ncq-gs-DYQ" id="SdQ-rx-ez4"/>
+                        <outlet property="pt1" destination="jT8-dc-qlE" id="taM-Aq-Tl1"/>
+                        <outlet property="pt2" destination="PWh-T5-PTz" id="0gc-Ee-P2X"/>
+                        <outlet property="pt3" destination="yvm-jw-7wN" id="sOi-wt-452"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="54o-to-lYn">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
             </objects>
+            <point key="canvasLocation" x="539" y="22"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="BALL" width="288" height="312"/>
+        <image name="GAMEOVER" width="504" height="81"/>
+        <image name="LOGO" width="719" height="300"/>
+        <image name="Pillar" width="91" height="157"/>
+        <image name="PillarTop" width="91" height="65"/>
+        <image name="RETRY" width="302" height="126"/>
+        <image name="SCORE" width="388" height="225"/>
+    </resources>
 </document>
