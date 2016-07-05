@@ -180,6 +180,7 @@ class ViewController: UIViewController {
                 center = pillarPlacement(self.p9.center.x, y: self.p9.center.y)
                 break
             default:
+                
                 break
             }
             
