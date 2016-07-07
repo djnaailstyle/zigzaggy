@@ -147,52 +147,53 @@ class ViewController: UIViewController {
     func movePillarUp(floatx: CGFloat, floaty: CGFloat, pillarNumber:Int) -> CGPoint {
         var center = CGPointMake(floatx, floaty)
         
-        if checkPillarPosition(floaty) == true{
-            switch{
-            case 1:
-                center = pillarPlacement(self.p10.center.x, y: self.p10.center.y)
-            break
-            case 2:
-                center = pillarPlacement(self.p1.center.x, y: self.p1.center.y)
-                break
-            case 3:
-                center = pillarPlacement(self.p2.center.x, y: self.p2.center.y)
-                break
-            case 4:
-                center = pillarPlacement(self.p3.center.x, y: self.p3.center.y)
-                break
-            case 5:
-                center = pillarPlacement(self.p4.center.x, y: self.p4.center.y)
-                break
-            case 6:
-                center = pillarPlacement(self.p5.center.x, y: self.p5.center.y)
-                break
-            case 7:
-                center = pillarPlacement(self.p6.center.x, y: self.p6.center.y)
-                break
-            case 8:
-                center = pillarPlacement(self.p7.center.x, y: self.p7.center.y)
-                break
-            case 9:
-                center = pillarPlacement(self.p8.center.x, y: self.p8.center.y)
-                break
-            case 10:
-                center = pillarPlacement(self.p9.center.x, y: self.p9.center.y)
-                break
-            default:
-                
-                break
-            }
-            
+//        if checkPillarPosition(floaty) == true{
+//            switch(checkPillarPosition(floaty)){
+//            case 1:
+//                center = pillarPlacement(self.p10.center.x, y: self.p10.center.y)
+//            break
+//            case 2:
+//                center = pillarPlacement(self.p1.center.x, y: self.p1.center.y)
+//                break
+//            case 3:
+//                center = pillarPlacement(self.p2.center.x, y: self.p2.center.y)
+//                break
+//            case 4:
+//                center = pillarPlacement(self.p3.center.x, y: self.p3.center.y)
+//                break
+//            case 5:
+//                center = pillarPlacement(self.p4.center.x, y: self.p4.center.y)
+//                break
+//            case 6:
+//                center = pillarPlacement(self.p5.center.x, y: self.p5.center.y)
+//                break
+//            case 7:
+//                center = pillarPlacement(self.p6.center.x, y: self.p6.center.y)
+//                break
+//            case 8:
+//                center = pillarPlacement(self.p7.center.x, y: self.p7.center.y)
+//                break
+//            case 9:
+//                center = pillarPlacement(self.p8.center.x, y: self.p8.center.y)
+//                break
+//            case 10:
+//                center = pillarPlacement(self.p9.center.x, y: self.p9.center.y)
+//                break
+//            default:
+//                break
+//            }
+//            
+        return center
         }
         
-        }
+    
     func checkPillarPosition(y: CGFloat) -> (Bool){
         var low = false
         
         if (y > 720){
             low = true
         }
+        return low
     }
     
     func pillarPlacement(x: CGFloat, y: CGFloat) -> CGPoint {
