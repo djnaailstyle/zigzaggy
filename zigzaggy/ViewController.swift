@@ -11,14 +11,14 @@ import UIKit
 class ViewController: UIViewController {
     
 
-    @IBAction func Play(sender: AnyObject) {
+    @IBAction func Play(_ sender: AnyObject) {
         
         BallChange = true
         TapsValid = true
-        self.GameOver.hidden = true
-        self.Ball.hidden = false
-        self.Scoreboard.hidden = true
-        self.Retry.hidden=true
+        self.GameOver.isHidden = true
+        self.Ball.isHidden = false
+        self.Scoreboard.isHidden = true
+        self.Retry.isHidden=true
         
         self.Ball.center.x = 178.0
         self.Ball.center.y = 390.0
@@ -26,7 +26,7 @@ class ViewController: UIViewController {
         self.p1.center = CGPoint(x: 175.0, y: 436.0)
         self.p2.center = CGPoint(x: 214.0, y: 407.0)
         
-        timer = NSTimer.scheduledTimerWithTimeInterval(0.045, target: self, selector: Selector("movement") , userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 0.045, target: self, selector: #selector(ViewController.movement) , userInfo: nil, repeats: true)
         
         self.p3.center = pillarPlacement(p2.center.x, y: p2.center.y)
         self.p4.center = pillarPlacement(p3.center.x, y: p3.center.y)
@@ -37,23 +37,23 @@ class ViewController: UIViewController {
         self.p9.center = pillarPlacement(p8.center.x, y: p8.center.y)
         self.p10.center = pillarPlacement(p9.center.x, y: p9.center.y)
         
-        self.p1.hidden = false
-        self.p2.hidden = false
-        self.p3.hidden = false
-        self.p4.hidden = false // this area is what is seen when playing the game
-        self.p5.hidden = false
-        self.p6.hidden = false
-        self.p7.hidden = false
-        self.p8.hidden = false
-        self.p9.hidden = false
-        self.p10.hidden = false
-        self.pt1.hidden = false
-        self.pt2.hidden = false
-        self.pt3.hidden = false
-        self.Logo.hidden = true
-        self.Play.hidden = true
+        self.p1.isHidden = false
+        self.p2.isHidden = false
+        self.p3.isHidden = false
+        self.p4.isHidden = false // this area is what is seen when playing the game
+        self.p5.isHidden = false
+        self.p6.isHidden = false
+        self.p7.isHidden = false
+        self.p8.isHidden = false
+        self.p9.isHidden = false
+        self.p10.isHidden = false
+        self.pt1.isHidden = false
+        self.pt2.isHidden = false
+        self.pt3.isHidden = false
+        self.Logo.isHidden = true
+        self.Play.isHidden = true
     }
-    @IBAction func Retry(sender: AnyObject) {
+    @IBAction func Retry(_ sender: AnyObject) {
     }
     @IBOutlet weak var p10: UIImageView!
     @IBOutlet weak var p9: UIImageView!
@@ -74,7 +74,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var Logo: UIImageView!
     @IBOutlet weak var GameOver: UIImageView!
     @IBOutlet weak var Ball: UIImageView!
-    var timer = NSTimer()
+    var timer = Timer()
     var TapsValid: Bool?
     var BallRight: Bool?
     var BallChange: Bool?
@@ -82,29 +82,29 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.GameOver.hidden = true
-        self.Ball.hidden = true
-        self.Scoreboard.hidden = true
-        self.Retry.hidden=true
-        self.p1.hidden = true
-        self.p2.hidden = true
-        self.p3.hidden = true
-        self.p4.hidden = true
-        self.p5.hidden = true
-        self.p6.hidden = true   //menu items
-        self.p7.hidden = true
-        self.p8.hidden = true
-        self.p9.hidden = true
-        self.p10.hidden = true
-        self.pt1.hidden = true
-        self.pt2.hidden = true
-        self.pt3.hidden = true
-        self.Logo.hidden=false
-        self.Play.hidden = false
+        self.GameOver.isHidden = true
+        self.Ball.isHidden = true
+        self.Scoreboard.isHidden = true
+        self.Retry.isHidden=true
+        self.p1.isHidden = true
+        self.p2.isHidden = true
+        self.p3.isHidden = true
+        self.p4.isHidden = true
+        self.p5.isHidden = true
+        self.p6.isHidden = true   //menu items
+        self.p7.isHidden = true
+        self.p8.isHidden = true
+        self.p9.isHidden = true
+        self.p10.isHidden = true
+        self.pt1.isHidden = true
+        self.pt2.isHidden = true
+        self.pt3.isHidden = true
+        self.Logo.isHidden=false
+        self.Play.isHidden = false
         
     }
     
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
         if TapsValid == true{
             if BallRight == true{
@@ -144,8 +144,8 @@ class ViewController: UIViewController {
         p10.center.y += 5
     }
     
-    func movePillarUp(floatx: CGFloat, floaty: CGFloat, pillarNumber:Int) -> CGPoint {
-        var center = CGPointMake(floatx, floaty)
+    func movePillarUp(_ floatx: CGFloat, floaty: CGFloat, pillarNumber:Int) -> CGPoint {
+        let center = CGPoint(x: floatx, y: floaty)
         
 //        if checkPillarPosition(floaty) == true{
 //            switch(checkPillarPosition(floaty)){
@@ -187,7 +187,7 @@ class ViewController: UIViewController {
         }
         
     
-    func checkPillarPosition(y: CGFloat) -> (Bool){
+    func checkPillarPosition(_ y: CGFloat) -> (Bool){
         var low = false
         
         if (y > 720){
@@ -196,11 +196,11 @@ class ViewController: UIViewController {
         return low
     }
     
-    func pillarPlacement(x: CGFloat, y: CGFloat) -> CGPoint {
+    func pillarPlacement(_ x: CGFloat, y: CGFloat) -> CGPoint {
         var PillarNewX:CGFloat
         var PillarNewY:CGFloat
         
-        var random: Int = Int(arc4random() % 2)
+        let random: Int = Int(arc4random() % 2)
         if random == 1 {
         
         PillarNewX = x + 39
@@ -223,7 +223,7 @@ class ViewController: UIViewController {
                 PillarNewY = y - 29   //constraints on the zigzag
             }
         }
-        var NewPillarCenter = CGPointMake(PillarNewX, PillarNewY)
+        let NewPillarCenter = CGPoint(x: PillarNewX, y: PillarNewY)
         
         return(NewPillarCenter)
     }

@@ -1,8 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -14,7 +18,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Pillar" translatesAutoresizingMaskIntoConstraints="NO" id="eZy-v3-O5Z">
@@ -127,7 +131,7 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gyb-97-nBf">
-                                <rect key="frame" x="273" y="252" width="113" height="30"/>
+                                <rect key="frame" x="144" y="318" width="113" height="30"/>
                                 <state key="normal" title="CLICK TO PLAY"/>
                                 <connections>
                                     <action selector="Play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WdN-J0-hkt"/>
@@ -140,22 +144,22 @@
                                     <constraint firstAttribute="height" constant="55" id="jKR-RR-1Vi"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="LOGO" translatesAutoresizingMaskIntoConstraints="NO" id="ndE-Xn-r4m">
-                                <rect key="frame" x="209" y="78" width="240" height="147"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="9ec-Xw-SgO"/>
-                                    <constraint firstAttribute="height" constant="147" id="wbL-MV-M9v"/>
-                                </constraints>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="SCORE" translatesAutoresizingMaskIntoConstraints="NO" id="weG-9v-IxS">
-                                <rect key="frame" x="26" y="78" width="348" height="186"/>
+                                <rect key="frame" x="-54" y="78" width="348" height="186"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="186" id="OYV-O3-C8C"/>
                                     <constraint firstAttribute="width" constant="348" id="fQ7-51-Ogf"/>
                                 </constraints>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="LOGO" translatesAutoresizingMaskIntoConstraints="NO" id="ndE-Xn-r4m">
+                                <rect key="frame" x="67" y="117" width="240" height="147"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="9ec-Xw-SgO"/>
+                                    <constraint firstAttribute="height" constant="147" id="wbL-MV-M9v"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="cBh-5s-u9Q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MYE-B5-QNY"/>
                             <constraint firstItem="ndE-Xn-r4m" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OuV-NL-iPl"/>
